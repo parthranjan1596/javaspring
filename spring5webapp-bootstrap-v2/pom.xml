@@ -5,17 +5,22 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.7.2</version>
+		<version>2.2.2.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.example</groupId>
-	<artifactId>javaspring</artifactId>
+
+	<groupId>guru.springframework</groupId>
+	<artifactId>spring5webapp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>javaspring</name>
-	<description>Java Spring project for Spring Boot</description>
+
+	<name>spring5webapp</name>
+
+	<description>Example Spring 5 Web Application</description>
+
 	<properties>
-		<java.version>18</java.version>
+		<java.version>11</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -35,6 +40,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.junit.vintage</groupId>
+					<artifactId>junit-vintage-engine</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 

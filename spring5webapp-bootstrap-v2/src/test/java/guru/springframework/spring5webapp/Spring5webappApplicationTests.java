@@ -1,10 +1,10 @@
-package com.example.javaspring;
+package guru.springframework.spring5webapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JavaspringApplicationTests {
+class Spring5webappApplicationTests {
 
 	@Test
 	void contextLoads() {
