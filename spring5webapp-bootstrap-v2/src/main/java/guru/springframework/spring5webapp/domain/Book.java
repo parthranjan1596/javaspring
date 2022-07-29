@@ -30,6 +30,17 @@ public class Book {
         this.isbn = isbn;
     }
 
+    public Publisher getPublisher() {
+        return publisher;
+    }
+
+    @ManyToOne
+    Publisher publisher;
+
+    public void setPublisher(Publisher publisher) {
+        this.publisher = publisher;
+    }
+
     public Long getId() {
         return id;
     }
